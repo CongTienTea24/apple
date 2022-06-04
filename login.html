@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./images/icons/favicon.ico" rel="icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styless.css">
+    <title>Apple - Đăng Nhập</title>
+</head>
+  <body>
+    <header>
+      <nav>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="index.html"><i class="fa fa-apple"></i></a>
+              </li>
+              <li><a href="index.html" class="menu-item">Trang chủ</a></li>
+              <li><a href="sanpham.html" class="menu-item">Sản phẩm</a></li>
+              <li><a href="tintuc.html" class="menu-item">Tin tức</a></li>
+              <li><a href="" class="menu-item">Giới thiệu</a></li>
+              <li><a href="tuyendung.html" class="menu-item">Tuyển dụng</a></li>
+              <li><a href="#" class="menu-item">Hỗ trợ</a></li>
+              <li>
+                <a href="#" id="search"><i class="fa fa-search"></i></a>
+              </li>
+              <li>
+                  <a href="#" class="menu-item"><i class="fa fa-bell" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#" class="menu-item"><i class="fa fa-shopping-basket"></i></a>
+              </li>
+              <li>
+                  <a href="login.html" class="menu-item"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" class="menu-item">VN</a></li>
+              <li><a href="#" class="menu-item">EN</a></li>  
+            </ul>
+            <div class="search-form">
+              <form>
+                <input type="text" name="" placeholder="Tìm kiếm sản phẩm,..." />
+              </form>
+            </div>
+            <a href="#" class="close"><i class="fa fa-times"></i></a>
+          </div>
+        </nav>
+  </header>
+
+  <center>
+    <div class="login">
+      <form class="dangnhap" method="post" style="width:350px; background-color: #FFF; border-radius: 20px;">
+        <div class="container">
+          <div class="background">
+            <br><br>
+            <img src="images/logoHufi.JPG" style="width: 100%"/>
+          </div>
+          <div align="center" style="color: rgb(255, 0, 0); font-weight: bold; font-size: 19px"> ĐĂNG NHẬP HỆ THỐNG
+          </div>
+          <div style="margin-left: 0px;">
+            <input type="text" style="height: 30px; width: 300px; border-radius: 30px; margin-top: 5px;" 
+            id="Email" name="Email" placeholder="Nhập Email" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,}">
+            <span id="EmailError"></span>
+          </div>
+          <div style="margin-left: 0px;">
+            <input type="password" style="width: 300px; height: 30px; border-radius: 30px; margin-top: 3px;" id="Mk" name="Mk" placeholder="Nhập password">
+            <span id="MkError"></span>
+          </div><br>
+          <center><a href="index.html"><input type="button" value="Đăng Nhập" style="height: 35px; background-color: rgb(155, 155, 155); width: 50%; color: rgb(0, 0, 0); border-radius: 30px;" onClick="KTra();"></a></center>
+          <center><input type="button" value="Đăng Ký" style="height: 35px; background-color: rgb(155, 155, 155); width: 50%; color: rgb(0, 0, 0); border-radius: 30px; margin-top: 3px; ">
+          <input type="button" value="Trang chủ" style="height: 35px; background-color: rgb(148, 148, 148); width: 50%; color: rgb(0, 0, 0); border-radius: 30px; margin-top: 3px;"></center>
+        </div>
+      </form>
+    </div>
+  </center>
+  <script>
+		function KTra()
+		{		
+				var flag=true;
+				var Email = document.getElementById("Email").value.trim();
+				var Email = /^[a-zA-Z0-9.!#$%&'*+/=?^_{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+				if (!Email.test(Email)||Email.length<10)
+					{
+						flag = false;
+						document.getElementById("EmailError").innerHTML="Vui long kiem tra Email!"
+					}
+          else if (Email=="buicongtien92003@gmail.com" && password=="24052003tealylik")
+          {
+            window.open("bai5b.html");
+          }
+			var Mk = document.getElementById("Mk").value.trim();
+				if (Mk == "" || Mk.length<10)
+					{
+						flag = false;
+						document.getElementById("MkError").innerHTML="Kiem tra lai Pass phai du 10 ky tu"
+					}
+          else if(Email=="buicongtien92003@gmail.com" && password=="24052003tealylik")
+          {
+            window.open("bai5b.html");
+          }
+		}
+	</script>
+    <!-- /container -->
+
+    <!-- footer -->
+    <center>
+      <div id="footer-help" class="container-fluid">
+        <div class="row">
+          <h3 style="margin-top: 250px;">
+            Cần giúp đỡ. Xin vui lòng liên hệ số (098) 1234 123 123.
+          </h3>
+        </div>
+      </div>
+    </center>
+
+    <div class="jumbotron" id="footer-wrap">
+      <div class="container">
+        <!--  footer -->
+        <!-- footer-warning -->
+        <div id="footer-warning">
+          <ul>
+            <li class="col-xs-12 col-md-3">
+              Bản quyền thuộc về Tealylik.
+            </li>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  <script>
+    $('#mobile-cart-button').click(function() {
+      $('#bs-example-navbar-collapse-1').css('height', '0px')
+      $('#mobile-cart-box').slideToggle()
+      return false
+    })
+    $('button').click(function() {
+      $('#mobile-cart-box').css('display', 'none')
+    })
+
+    $('.list-group a:first-child').click(function() {
+      $(this)
+        .nextAll('a')
+        .slideToggle()
+      return false
+    })
+  </script>
+</html>

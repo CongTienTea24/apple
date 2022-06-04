@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./images/icons/favicon.ico" rel="icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styless.css">
+		<link rel="stylesheet" href="./slideshow.css">
+    <title>Apple - Sản phẩm</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html"><i class="fa fa-apple"></i></a>
+            </li>
+            <li><a href="index.html" class="menu-item">Trang chủ</a></li>
+            <li><a href="sanpham.html" class="menu-item">Sản phẩm</a></li>
+            <li><a href="tintuc.html" class="menu-item">Tin tức</a></li>
+            <li><a href="" class="menu-item">Giới thiệu</a></li>
+            <li><a href="tuyendung.html" class="menu-item">Tuyển dụng</a></li>
+            <li><a href="#" class="menu-item">Hỗ trợ</a></li>
+            <li>
+              <a href="#" id="search"><i class="fa fa-search"></i></a>
+            </li>
+            <li>
+                <a href="#" class="menu-item"><i class="fa fa-bell" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="giohang.html" class="menu-item"><i class="fa fa-shopping-basket"></i></a>
+            </li>
+            <li>
+                <a href="login.html" class="menu-item"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" class="menu-item">VN</a></li>
+            <li><a href="#" class="menu-item">EN</a></li>  
+          </ul>
+          <div class="search-form">
+            <form>
+              <input type="text" name="" placeholder="Tìm kiếm sản phẩm,..." />
+            </form>
+          </div>
+          <a href="#" class="close"><i class="fa fa-times"></i></a>
+        </div>
+      </nav>
+</header>
+<section >
+	<br>
+	<br><br>
+	<div class="khoi-slide">
+   <div class="cac-slide">
+      <div class="slide active"><img src="img/banners/banner0.gif" ></div>
+      <div class="slide"><img src="./img/banners/banner1.png"></div>
+			<div class="slide"><img src="./img/banners/banner2.png"></div>
+			<div class="slide"><img src="./img/banners/banner3.png"></div>
+			<div class="slide"><img src="./img/banners/banner4.png"></div>
+			<div class="slide"><img src="./img/banners/banner5.png"></div>
+			<div class="slide"><img src="./img/banners/banner6.png"></div>
+			<div class="slide"><img src="./img/banners/banner7.png"></div>
+			<div class="slide"><img src="./img/banners/banner8.png"></div>
+			<div class="slide"><img src="./img/banners/banner9.png"></div>
+   </div>
+   <div class="nut-slide">
+      <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
+      <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
+      <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+   </div>
+</div>
+	<img src="img/banners/blackFriday.gif" alt="" style="width: 100%;">
+</section>
+
+
+ <!-- quay lại đầu trang -->
+ <div id="back-to-top" class="back-to-top" data-toggle="tooltip" data-placement="left" title="Trở lên đầu trang">
+     <span class="glyphicon glyphicon-circle-arrow-up text-primary"></span></div>
+
+
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.js"
+     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     crossorigin="anonymous"
+   ></script>
+   <script type="text/javascript">
+     $(document).ready(function() {
+       $("#search").click(function() {
+         $(".menu-item").addClass("hide-item");
+         $(".search-form").addClass("active");
+         $(".close").addClass("active");
+         $("#search").hide();
+       });
+       $(".close").click(function() {
+         $(".menu-item").removeClass("hide-item");
+         $(".search-form").removeClass("active");
+         $(".close").removeClass("active");
+         $("#search").show();
+       });
+     });
+   </script>
+<script src="main.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

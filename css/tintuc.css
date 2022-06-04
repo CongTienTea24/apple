@@ -1,0 +1,40 @@
+.body-tintuc{
+	margin: 20px 50px 50px 90px;
+	width: 88%;
+}
+.tintuc-header{
+	height: 20px;
+	width: 140px;
+	font-weight: bold;
+	line-height: 20px;
+	padding-left: 10px;
+	font-size: 20px;
+	background: rgb(26, 26, 26);
+	color: white;
+	border-radius: 10px;
+}
+.tintuc-info{
+	height: 170px;
+	border-bottom: 1px solid #FCF;
+	margin-top: 5px;
+	background:rgb(26, 26, 26);
+	border-radius: 10px;
+}
+.tintuc-info img{
+	border: 1px solid gray;
+	float: left;
+	margin-right: 10px;
+	padding:5px;
+	border-radius: 5px;
+	height:148px;
+	width:224px;
+}
+.tintuc-info a:hover{
+	color: rgb(187, 25, 25);
+	opacity: 0.4;
+}
+.tintuc-info h5{
+	font-weight: 100;
+	font-style: italic;
+	color: rgb(182, 180, 180);
+}
