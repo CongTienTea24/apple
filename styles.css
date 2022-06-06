@@ -29,40 +29,6 @@ header{
   background-color: rgba(0,0,0,0.8);
   backdrop-filter: blur(2rem);
 }
-.nav-list{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 -1rem;
-}
-.nav-list-mobile{
-  display: none;
-}
-.nav-link{
-  font-size: 16px;
-  color: #fff;
-  padding: 0 1rem;
-  transition: opacity 0.5s;
-}
-.nav-link:hover{
-  opacity: .3;
-}
-.nav-link-apple{
-  width: 1.6rem;
-  height: 4.4rem;
-  background: url("./images/icons/apple.svg") center no-repeat;
-}
-.nav-link-search{
-  width: 1.6rem;
-  height: 4.4rem;
-  background: url("./images/icons/search.svg") center no-repeat;
-}
-.nav-link-bag{
-  width: 1.4rem;
-  height: 4.4rem;
-  background: url("./images/icons/bag.svg") center no-repeat;
-}
 .iphone-13-pro{
   height:69.2rem;
   background: url("./images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
@@ -156,89 +122,40 @@ margin-top: 1.6rem;
   border-top: none;
 }
 
-@media screen and(max-width:1068px){
-  .iphone-13-pro{
-      background:url("images/hero/iphone-11-pro/iphone_11_pro_medium.jpg");
- }
-  .iphone-11{
-      background:url("images/hero/iphone-11/iphone_11_medium.jpg");
- }
-  .watch{
-      background:url("images/hero/watch/watch_medium.jpg");
- }
-  .hero{
-      height: 65rem;
-      background-size:auto 69.8rem;
-      background-position:bottom center;
-      background-repeat:no-repeat;
-      font-size:4.4rem;
-  }
-  .title-heading{
-    font-size: 4.4rem;
- }
-
- .title-sub-heading{
-    font-size:2.4rem;
-}
-.cta-link:nth-child(2){
-   margin-left:2rem;
-}
-.title-heading-watch{
-    height:6.2rem;
-    background: url("./images/hero/watch/logo_watch_medium.png") center no-repeat;
-    background-size: auto 6.2rem;
-}            
+/* footer */
+.footer-item {
+  padding: .5rem 2rem;
+  background: #e4e4e4;
+  display: flex;
 }
 
-/* Dropdown Button */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.footer-item .img-footer {
+  align-items: center;
+  display: flex;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 10px;
+.footer-item .img-footer img {
+  width: 50%;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-radius: 10px;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(253, 253, 253);
-  opacity: 10;
+.footer-item .social-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  list-style: none;
 }
 
-/* Quay về đầu trang */
-.back-to-top {
-  position: fixed;
-  top: auto;
-  left: auto;
-  right: 15px;
-  bottom: 15px;
-  font-size: 32px;
-  opacity: 0.8;
-  z-index: 9999;
-  cursor: pointer;
+.footer-item .social-footer li a {
+  color: #000000;
+  font-size: 2rem;
 }
 
-.back-to-top:hover {
-  opacity: 1;
+.footer-item .social-footer li:last-child {
+  margin-left: .5rem;
 }
 
-
-
-/* banner slideshoew */
+/* sao */
+.checked {
+  color: orange;
+}

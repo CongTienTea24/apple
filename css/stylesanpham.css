@@ -26,10 +26,10 @@
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
     }
     ul.products li{
-      flex-basis: 25%;
+      flex-basis: 15%;
       padding-left: 15px;
       padding-right: 15px;
       box-sizing: border-box;
@@ -95,15 +95,14 @@
       font-size: 14px;
     }
 
-
-
     /* banner */
     .block-sliding-home__box-right .item-banner-right{
-        width: 256px;
+        width: 280px;
         float: left;
         margin-top: 3px;
         border-radius: 10px;
         box-shadow: 0 0 5px;
+        display: block;
     }
 
     .sale .sale-item{
@@ -113,4 +112,8 @@
        margin-right: 10px;
        border-radius: 10px;
        box-shadow: 0 0 5px; 
+       display: block;
     }
+
+
+    

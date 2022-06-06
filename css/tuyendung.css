@@ -1,6 +1,7 @@
 .body-tuyendung{
 	margin: 50px ;
 	width: 90%;
+	display: block;
 }
 .tuyendung-header{
 	height: 40px;
